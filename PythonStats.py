@@ -91,7 +91,7 @@ def clean_dataframe(url,dataframe):
                       'Non-Con Adj Efficiency',
                       'Non-Con Adj Efficiency Rank']
 
-        # Team names are formatted differently between the different websites. Reformat the Kenpom team names so that
+        # Some team names are formatted differently between the different websites. Reformat the Kenpom team names so that
         # they match the team names from the sports-reference pages.
         dataframe['Team'].replace('St\.', 'State', regex=True, inplace=True)
         dataframe['Team'].replace('BYU', 'Brigham Young', regex=True, inplace=True)
