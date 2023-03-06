@@ -83,7 +83,7 @@ def load_data(url):
 
 def clean_dataframe(url,dataframe):
     if "kenpom" in url:
-        # Rename columns
+        # Rename dataframe columns
         dataframe.columns = ['Rank', 'Team', 'Conference', 'W-L', 'Adj Efficiency Margin', 'Adj Off Rating', 'Adj Off Rank',
                       'Adj Def Rating', 'Adj Def Rank', 'Adj Tempo', 'Adj Tempo Rank', 'Luck', 'Luck Rank',
                       'Opp Adj Efficiency Margin', 'Opp Adj Efficiency Margin Rank', 'Opp Off Efficiency',
